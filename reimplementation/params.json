@@ -1,0 +1,77 @@
+{
+  "params": {
+    "SSR": {
+      "sigma": 80,
+      "stretch_cfg": [
+        "minmax",
+        0.0
+      ],
+      "joint": false,
+      "antilog": true
+    },
+    "MSR": {
+      "sigmas": [
+        15,
+        80,
+        250
+      ],
+      "stretch_cfg": [
+        "minmax",
+        0.0
+      ],
+      "joint": false,
+      "antilog": true
+    },
+    "MSRCR": {
+      "sigmas": [
+        15,
+        80,
+        200
+      ],
+      "alpha": 1000.0,
+      "stretch_cfg": [
+        "minmax",
+        0.0
+      ],
+      "joint": false,
+      "antilog": true
+    },
+    "CLAHE": {
+      "clip": 2.0,
+      "tile": 8,
+      "space": "rgb"
+    },
+    "Ours": {
+      "clip": 2.0,
+      "tile": 8,
+      "sigmas": [
+        15,
+        80,
+        250
+      ],
+      "alpha": 10.0,
+      "h_stretch": [
+        "none",
+        0.0
+      ],
+      "v_stretch": [
+        "meanstd",
+        2.5
+      ],
+      "antilog": true,
+      "lam": 0.3,
+      "bilateral": [
+        5,
+        50,
+        5
+      ]
+    }
+  },
+  "loss": {
+    "SSR": 0.2745028623035816,
+    "MSR": 0.18729262780297498,
+    "MSRCR": 0.12136320657043513,
+    "CLAHE": 0.5289749332101342,
+    "Ours": 0.9130519076690734
+  }
+}

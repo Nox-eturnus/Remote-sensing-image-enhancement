@@ -1,0 +1,6 @@
+# dataset (424 MB) and the paper's PDF are not redistributed here
+archive/
+059.pdf
+
+__pycache__/
+*.pyc
